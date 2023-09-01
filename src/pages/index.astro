@@ -45,9 +45,9 @@ const posts = (await getCollection("blog"))
                     transition:name={"post-image-" + post.id}
                   />
                   <div class="gap-1">
-                    <h4 class="title" transition:name={"post-title-" + post.id}>
+                    <h3 class="title" transition:name={"post-title-" + post.id}>
                       {post.data.title}
-                    </h4>
+                    </h3>
                     <p class="date">
                       <FormattedDate date={post.data.pubDate} />
                     </p>
